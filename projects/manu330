@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>RC Car Design & Manufacturing Upgrade | Matheus Pierri</title>
+
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="../index.html">Matheus Pierri</a>
+
+        <div>
+            <a href="../index.html#about">About</a>
+            <a href="../index.html#experience">Experience</a>
+            <a href="../index.html#projects">Projects</a>
+            <a href="../index.html#contact">Contact</a>
+        </div>
+    </nav>
+
+
+    <main class="project-page">
+
+
+        <!-- Hero -->
+        <section class="project-hero">
+
+            <a class="back-link" href="../index.html#projects">
+                ← Back to Projects
+            </a>
+
+            <p class="eyebrow">MANU 330 · Design & Manufacturing Project</p>
+
+            <h1>RC Car Design & Manufacturing Upgrade</h1>
+
+            <p class="project-intro">
+                End-to-end redesign of an off-the-shelf RC vehicle through
+                mechanical design, manufacturing-process development,
+                prototyping, simulation, testing, cost analysis, and
+                production planning.
+            </p>
+
+
+            <div class="project-meta">
+
+                <div>
+                    <span>Project</span>
+                    <strong>University Team Project</strong>
+                </div>
+
+                <div>
+                    <span>Timeline</span>
+                    <strong>2025 – Apr. 2026</strong>
+                </div>
+
+                <div>
+                    <span>Tools</span>
+                    <strong>CAD · ANSYS · PolyFlow · FEA</strong>
+                </div>
+
+                <div>
+                    <span>Manufacturing</span>
+                    <strong>Casting · Thermoforming · Additive · Composites</strong>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Hero Image -->
+        <section class="project-content-section">
+
+            <div class="wide-image-placeholder">
+                Final RC Car + Exploded CAD Hero Image
+            </div>
+
+        </section>
+
+
+        <!-- Overview -->
+        <section class="project-content-section project-two-column">
+
+            <div>
+
+                <p class="section-label">01 · Project Overview</p>
+
+                <h2>Redesigning a Product, Not Just a Part</h2>
+
+            </div>
+
+
+            <div class="project-body-text">
+
+                <p>
+                    The objective of MANU 330 was to take an existing RC vehicle
+                    and improve it through a series of interconnected mechanical
+                    and manufacturing redesigns.
+                </p>
+
+                <p>
+                    Our final vehicle combined four major custom subsystems:
+                    cast aluminum wheels, a self-righting roll cage,
+                    a thermoformed ABS aeroshell, and an adjustable
+                    chassis extension.
+                </p>
+
+                <p>
+                    Each subsystem progressed through concept generation,
+                    material and process selection, prototyping, simulation,
+                    physical testing, redesign, manufacturing planning,
+                    cost estimation, and final vehicle integration.
+                </p>
+
+                <p>
+                    Rather than treating the project as four isolated parts,
+                    the final stage focused on assembling them into a single
+                    manufacturable product and developing a production strategy
+                    for a hypothetical 20,000-unit manufacturing run.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- Four Systems -->
+        <section class="project-content-section project-highlight-section">
+
+            <p class="section-label">02 · System Redesign</p>
+
+            <h2>Four Subsystems, Four Manufacturing Problems</h2>
+
+
+            <div class="project-feature-grid">
+
+                <article>
+
+                    <h3>Cast Aluminum Wheels</h3>
+
+                    <p>
+                        Redesigned the stock wheels for sand casting,
+                        including geometry, draft, gating, risers,
+                        pattern development, structural validation,
+                        and tire-retention features.
+                    </p>
+
+                </article>
+
+
+                <article>
+
+                    <h3>Self-Righting Roll Cage</h3>
+
+                    <p>
+                        Developed a protective roll structure that used
+                        vehicle geometry and center-of-mass effects to
+                        return the car upright after inversion.
+                    </p>
+
+                </article>
+
+
+                <article>
+
+                    <h3>Thermoformed Aeroshell</h3>
+
+                    <p>
+                        Designed a Kei-truck-inspired ABS body shell
+                        and forming tool while studying draft,
+                        fillets, material thinning, webbing,
+                        trimming, and part release.
+                    </p>
+
+                </article>
+
+
+                <article>
+
+                    <h3>Adjustable Chassis Extension</h3>
+
+                    <p>
+                        Designed a lightweight structural extension
+                        to alter vehicle length and realign interfaces,
+                        with multiple mounting positions and validated
+                        bolted connections.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- Wheels -->
+        <section class="project-content-section project-two-column">
+
+            <div>
+
+                <p class="section-label">03 · Aluminum Wheel Development</p>
+
+                <h2>Designing for Sand Casting</h2>
+
+                <div class="image-placeholder">
+                    Wheel CAD + Casting / Mold Photos
+                </div>
+
+            </div>
+
+
+            <div class="project-body-text">
+
+                <p>
+                    The wheel redesign required balancing structural performance,
+                    castability, tire retention, low mass, and repeatable
+                    manufacturing.
+                </p>
+
+                <p>
+                    Multiple wheel geometries were compared before selecting
+                    a five-circle design with smoother transitions and more
+                    uniform wall thicknesses to improve load distribution
+                    and mold filling.
+                </p>
+
+
+                <h3>Simulation & Material Selection</h3>
+
+                <p>
+                    A356 aluminum was selected through a weighted material
+                    decision process. FEA of a severe impact-and-rotation
+                    loading case predicted a maximum stress of approximately
+                    2.25 MPa, compared with an assumed material yield strength
+                    of approximately 165 MPa.
+                </p>
+
+
+                <h3>Learning Through Failed Castings</h3>
+
+                <p>
+                    Early casting attempts exposed practical problems that
+                    were not obvious in CAD. These included insufficient
+                    feature depth, sand damage, runner placement, and
+                    incomplete mold formation.
+                </p>
+
+                <p>
+                    The design and casting process were revised between
+                    attempts, ultimately producing three successful parts
+                    in the final casting run.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- Roll Cage -->
+        <section class="project-content-section project-highlight-section">
+
+            <div class="project-two-column">
+
+                <div>
+
+                    <p class="section-label">04 · Self-Righting Roll Cage</p>
+
+                    <h2>Turning a Failed Test Into a Functional Design</h2>
+
+                    <div class="image-placeholder">
+                        Self-Righting Test / Roll Cage CAD
+                    </div>
+
+                </div>
+
+
+                <div class="project-body-text">
+
+                    <p>
+                        One of the project's clearest design iterations came
+                        from the roll cage.
+                    </p>
+
+                    <p>
+                        The first halo-style prototype successfully protected
+                        the vehicle but failed the self-righting requirement,
+                        leaving the car balanced on two wheels during the
+                        worst-case inverted test.
+                    </p>
+
+                    <p>
+                        The geometry was then widened to increase the effective
+                        lever arm and alter how the vehicle's center of mass
+                        moved during rotation.
+                    </p>
+
+                    <p>
+                        The revised configuration consistently returned the
+                        car upright from the tested fully inverted condition.
+                    </p>
+
+
+                    <h3>Structural Design</h3>
+
+                    <p>
+                        A conservative approximately 400 N impact case was
+                        evaluated using FEA. The resulting peak stress was
+                        approximately 43 MPa against an assumed ABS yield
+                        strength near 48 MPa.
+                    </p>
+
+
+                    <h3>Production Concept</h3>
+
+                    <p>
+                        The final cage was designed as a modular injection-molded
+                        ABS assembly consisting of two halo components and a base,
+                        with an estimated production cycle of approximately
+                        9 minutes 50 seconds per cage.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Aeroshell -->
+        <section class="project-content-section project-two-column">
+
+            <div>
+
+                <p class="section-label">05 · Thermoformed Aeroshell</p>
+
+                <h2>From Mold Geometry to Production Shell</h2>
+
+                <div class="image-placeholder">
+                    Aeroshell Mold + Thermoformed Final Shell
+                </div>
+
+            </div>
+
+
+            <div class="project-body-text">
+
+                <p>
+                    The aeroshell was designed around vacuum thermoforming
+                    of 0.030-inch ABS sheet, requiring the body geometry
+                    to be developed alongside the manufacturing process.
+                </p>
+
+
+                <h3>Process Development</h3>
+
+                <p>
+                    Small-scale forming experiments were used to evaluate
+                    draft angle, corner radii, mold height, female features,
+                    venting, release behaviour, and webbing before committing
+                    to the full vehicle mold.
+                </p>
+
+
+                <h3>ANSYS PolyFlow</h3>
+
+                <p>
+                    Thermoforming simulations were used to examine material
+                    flow, local thinning, and webbing. Mold geometry was then
+                    revised with larger fillets and smoother draw transitions
+                    before the final design was manufactured.
+                </p>
+
+
+                <h3>Production Planning</h3>
+
+                <p>
+                    The scaled process used a multi-part forming layout and
+                    identified trimming as the primary production bottleneck.
+                    The estimated cycle time was approximately 6 minutes
+                    per shell, with an estimated cost of about $5.6 per part.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- Chassis -->
+        <section class="project-content-section project-highlight-section">
+
+            <div class="project-two-column">
+
+                <div>
+
+                    <p class="section-label">06 · Chassis Extension</p>
+
+                    <h2>Design, Material Selection & Physical Validation</h2>
+
+                    <div class="image-placeholder">
+                        Chassis Extension CAD + Installed Component
+                    </div>
+
+                </div>
+
+
+                <div class="project-body-text">
+
+                    <p>
+                        The chassis extension was developed to modify the vehicle's
+                        overall length while maintaining alignment with the stock
+                        chassis and allowing multiple mounting positions.
+                    </p>
+
+                    <p>
+                        The final design used PA6-GF25 chopped glass-fiber-reinforced
+                        nylon and a C-channel geometry manufactured through
+                        additive manufacturing.
+                    </p>
+
+
+                    <h3>Structural Validation</h3>
+
+                    <p>
+                        FEA predicted a maximum stress of approximately 21 MPa
+                        and a minimum factor of safety greater than 7.
+                    </p>
+
+
+                    <h3>Fastener Testing</h3>
+
+                    <p>
+                        Physical tests were used to determine the required
+                        bolted connection. Two bolts produced excessive
+                        movement, three improved the joint, and four created
+                        a rigid connection during vehicle testing.
+                    </p>
+
+
+                    <h3>Production Scale-Up</h3>
+
+                    <p>
+                        The finalized process required approximately
+                        35.8 minutes of print time per part. A conceptual
+                        40-printer farm operating at 90% utilization was
+                        estimated to produce approximately 67 parts per hour,
+                        at a calculated cost of approximately $4.42 per part.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Metrics -->
+        <section class="project-content-section">
+
+            <p class="section-label">07 · Quantitative Results</p>
+
+            <h2>Engineering & Manufacturing Outcomes</h2>
+
+
+            <div class="analysis-metric-grid">
+
+                <article>
+                    <span>Production Scenario</span>
+                    <strong>20,000</strong>
+                    <p>vehicle manufacturing run</p>
+                </article>
+
+                <article>
+                    <span>Wheel FEA</span>
+                    <strong>≈ 2.25 MPa</strong>
+                    <p>maximum predicted stress</p>
+                </article>
+
+                <article>
+                    <span>Aeroshell Cycle</span>
+                    <strong>≈ 6 min</strong>
+                    <p>estimated per shell</p>
+                </article>
+
+                <article>
+                    <span>Chassis FoS</span>
+                    <strong>&gt; 7</strong>
+                    <p>minimum predicted factor of safety</p>
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- Manufacturing Breadth -->
+        <section class="project-content-section">
+
+            <p class="section-label">08 · Manufacturing Experience</p>
+
+            <h2>Developing the Product Through Multiple Processes</h2>
+
+
+            <div class="project-feature-grid">
+
+                <article>
+                    <h3>Sand Casting</h3>
+                    <p>
+                        Pattern development, gating and riser design,
+                        sand molding, aluminum casting, defect analysis,
+                        and iterative process improvement.
+                    </p>
+                </article>
+
+
+                <article>
+                    <h3>Thermoforming</h3>
+                    <p>
+                        Mold design, draft and fillet development,
+                        vacuum forming, venting, trimming,
+                        webbing analysis, and production simulation.
+                    </p>
+                </article>
+
+
+                <article>
+                    <h3>Injection Molding Design</h3>
+                    <p>
+                        Designed the final roll cage around scalable
+                        ABS injection molding, including modularity,
+                        tooling assumptions, cycle time, and assembly.
+                    </p>
+                </article>
+
+
+                <article>
+                    <h3>Additive Manufacturing</h3>
+                    <p>
+                        Used 3D printing for functional prototypes,
+                        production tooling, casting patterns,
+                        and the final chassis-extension process.
+                    </p>
+                </article>
+
+
+                <article>
+                    <h3>Composite Processing</h3>
+                    <p>
+                        Manufactured and tensile-tested glass-fiber
+                        composite coupons through vacuum-assisted
+                        wet layup to compare a potential alternative
+                        chassis manufacturing route.
+                    </p>
+                </article>
+
+
+                <article>
+                    <h3>DFMA & Costing</h3>
+                    <p>
+                        Considered tooling, labor, cycle time,
+                        equipment utilization, assembly sequence,
+                        manufacturing risk, and per-part cost
+                        throughout the design process.
+                    </p>
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- Integration -->
+        <section class="project-content-section project-two-column">
+
+            <div>
+
+                <p class="section-label">09 · Final Integration</p>
+
+                <h2>Bringing the Subsystems Together</h2>
+
+                <div class="image-placeholder">
+                    Exploded Final Vehicle Assembly
+                </div>
+
+            </div>
+
+
+            <div class="project-body-text">
+
+                <p>
+                    The final project stage moved beyond individual component
+                    development and focused on the complete manufacturing
+                    system.
+                </p>
+
+                <p>
+                    An exploded CAD assembly was used to verify subsystem
+                    fitment, fastener locations, clearances, and assembly order
+                    before the complete vehicle was built.
+                </p>
+
+                <p>
+                    A manufacturing workflow was then developed in which wheel
+                    casting and machining, roll-cage molding, aeroshell
+                    thermoforming, and chassis-extension printing occurred
+                    in parallel before converging at final assembly.
+                </p>
+
+                <p>
+                    This made the project particularly valuable because
+                    engineering decisions were evaluated not only by whether
+                    a prototype worked, but also by whether the design could
+                    realistically be produced, assembled, and scaled.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- Lessons -->
+        <section class="project-content-section project-highlight-section">
+
+            <p class="section-label">10 · Engineering Lessons</p>
+
+            <h2>What Made This Project Valuable</h2>
+
+
+            <div class="project-three-column">
+
+                <article>
+
+                    <h3>Prototype Early</h3>
+
+                    <p>
+                        Several issues only appeared once parts were physically
+                        manufactured. Casting defects, roll behaviour,
+                        thermoforming release, and joint stiffness all required
+                        real testing.
+                    </p>
+
+                </article>
+
+
+                <article>
+
+                    <h3>Failure Creates Better Designs</h3>
+
+                    <p>
+                        Failed castings and an unsuccessful first roll-cage
+                        configuration became useful engineering inputs,
+                        driving changes that produced successful later
+                        iterations.
+                    </p>
+
+                </article>
+
+
+                <article>
+
+                    <h3>Manufacturing Shapes Design</h3>
+
+                    <p>
+                        Material choice, tooling, geometry, cycle time,
+                        assembly, cost, and production volume cannot be
+                        separated from the mechanical design itself.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- Skills -->
+        <section class="project-content-section">
+
+            <p class="section-label">11 · Skills & Tools</p>
+
+            <h2>Technical Areas</h2>
+
+
+            <div class="skill-tags">
+
+                <span>CAD</span>
+                <span>ANSYS FEA</span>
+                <span>ANSYS PolyFlow</span>
+                <span>Sand Casting</span>
+                <span>Thermoforming</span>
+                <span>Injection Molding</span>
+                <span>Additive Manufacturing</span>
+                <span>Composite Manufacturing</span>
+                <span>Material Selection</span>
+                <span>DFMA</span>
+                <span>FMEA</span>
+                <span>Prototyping</span>
+                <span>Design Validation</span>
+                <span>Cost Analysis</span>
+                <span>Production Planning</span>
+                <span>Technical Documentation</span>
+
+            </div>
+
+        </section>
+
+
+        <!-- Next -->
+        <section class="project-next">
+
+            <p>Next Project</p>
+
+            <a href="robot.html">
+                Autonomous BLE Robot →
+            </a>
+
+        </section>
+
+
+    </main>
+
+
+    <footer>
+        <p>© 2026 Matheus Pierri</p>
+    </footer>
+
+</body>
+
+</html>
