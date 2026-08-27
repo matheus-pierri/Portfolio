@@ -756,3 +756,106 @@ footer {
         min-height: 240px;
     }
 }
+
+/* =========================================================
+   SEASPAN PAGE
+   ========================================================= */
+
+.seaspan-focus-section {
+    max-width: none;
+    background: #eef4f8;
+}
+
+.seaspan-focus-section .project-feature-grid article {
+    background: white;
+    border-left: 4px solid #64748b;
+}
+
+.portfolio-note {
+    max-width: 900px;
+    margin-top: 28px;
+    padding: 18px 20px;
+
+    background: #eef4f8;
+    border-left: 4px solid #64748b;
+    border-radius: 8px;
+
+    color: #475569;
+    font-size: 0.9rem;
+    line-height: 1.7;
+}
+
+.seaspan-deep-dive-section {
+    max-width: none;
+    background: #f3f6f9;
+}
+
+.seaspan-card-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 24px;
+    margin-top: 35px;
+}
+
+.seaspan-project-card {
+    padding: 32px;
+
+    background: white;
+
+    border: 1px solid #dbe3ea;
+    border-top: 5px solid #475569;
+    border-radius: 14px;
+
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.seaspan-project-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 28px rgba(15, 23, 42, 0.09);
+}
+
+.seaspan-project-card h3 {
+    margin-bottom: 14px;
+
+    font-size: 1.4rem;
+    color: #0f172a;
+}
+
+.seaspan-project-card > p {
+    margin-bottom: 15px;
+
+    color: #475569;
+    line-height: 1.7;
+}
+
+.seaspan-project-card .card-detail {
+    padding-top: 14px;
+
+    border-top: 1px solid #e2e8f0;
+
+    font-size: 0.9rem;
+    color: #64748b;
+}
+
+.seaspan-project-card a {
+    display: inline-block;
+
+    margin-top: 8px;
+
+    font-weight: 700;
+    color: #1e3a5f;
+}
+
+.seaspan-project-card a:hover {
+    text-decoration: underline;
+}
+
+
+@media (max-width: 800px) {
+
+    .seaspan-card-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
