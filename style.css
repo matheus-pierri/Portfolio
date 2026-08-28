@@ -1082,3 +1082,133 @@ footer {
     }
 
 }
+
+
+/* =========================================================
+   HOMEPAGE EXPERIENCE
+   ========================================================= */
+
+.experience-featured {
+    padding: 32px !important;
+}
+
+.experience-featured > p:last-of-type {
+    max-width: 900px;
+    line-height: 1.75;
+}
+
+
+/* Metric tiles */
+
+.experience-metrics {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 12px;
+
+    margin-top: 24px;
+    margin-bottom: 22px;
+}
+
+.experience-metrics div {
+    padding: 16px;
+
+    background: #f1f5f9;
+
+    border: 1px solid #e2e8f0;
+    border-radius: 9px;
+}
+
+.experience-metrics strong {
+    display: block;
+
+    margin-bottom: 4px;
+
+    font-size: 1.08rem;
+    line-height: 1.25;
+
+    color: #172b3a;
+}
+
+.experience-metrics span {
+    display: block;
+
+    font-size: 0.78rem;
+    line-height: 1.45;
+
+    color: #64748b;
+}
+
+
+/* Link to detailed experience/project page */
+
+.experience-link {
+    display: inline-block;
+
+    margin-top: 2px;
+
+    font-weight: 700;
+    color: #1e3a5f;
+}
+
+.experience-link:hover {
+    text-decoration: underline;
+}
+
+
+/* Smaller experience entries:
+   MyGradeBooster + Kumon */
+
+.experience-compact {
+    padding: 24px 28px !important;
+}
+
+.experience-compact > p:last-child {
+    max-width: 850px;
+
+    color: #4b5563;
+    line-height: 1.7;
+}
+
+
+/* Slightly more visual separation between entries */
+
+#experience article {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#experience article:hover {
+    transform: translateY(-2px);
+
+    box-shadow: 0 8px 22px rgba(15, 23, 42, 0.06);
+}
+
+
+/* =========================================================
+   RESPONSIVE EXPERIENCE LAYOUT
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    .experience-metrics {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 520px) {
+
+    .experience-metrics {
+        grid-template-columns: 1fr;
+    }
+
+    .experience-featured {
+        padding: 24px !important;
+    }
+
+    .experience-compact {
+        padding: 22px !important;
+    }
+
+}
