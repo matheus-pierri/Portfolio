@@ -1602,3 +1602,40 @@ footer {
     }
 
 }
+
+/* =========================================================
+   BLE ROBOT PROJECT PAGE
+   ========================================================= */
+
+.robot-hero-media {
+    padding-top: 55px !important;
+    padding-bottom: 55px !important;
+}
+
+
+/* Final robot hero image */
+
+.robot-hero-media .project-figure-wide {
+    width: 70%;
+    max-width: 900px;
+}
+
+
+/* Keep testing video from becoming too large */
+
+.robot-hero-media + section video,
+.project-page video {
+    max-height: 520px;
+    object-fit: contain;
+}
+
+
+/* Mobile */
+
+@media (max-width: 850px) {
+
+    .robot-hero-media .project-figure-wide {
+        width: 100%;
+    }
+
+}
