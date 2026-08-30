@@ -1518,3 +1518,87 @@ footer {
     }
 
 }
+
+/* =========================================================
+   MANU 330 / RC CAR PROJECT PAGE
+   ========================================================= */
+
+.manu-hero-media {
+    padding-top: 55px !important;
+    padding-bottom: 55px !important;
+}
+
+
+/* Keep the hero image visually strong without making it huge */
+
+.manu-hero-media .project-figure-wide {
+    width: 78%;
+    max-width: 1000px;
+}
+
+
+/* Secondary full-width figures */
+
+.manu-secondary-figure {
+    width: 72%;
+    max-width: 900px;
+
+    margin-top: 55px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* Give the PolyFlow figure its own breathing room */
+
+.manu-simulation-section {
+    padding-top: 20px !important;
+}
+
+.manu-simulation-section .project-figure-wide {
+    width: 75%;
+    max-width: 950px;
+}
+
+
+/* Prevent very tall report screenshots from dominating */
+
+.manu-simulation-section img,
+.manu-secondary-figure img {
+    max-height: 560px;
+    object-fit: contain;
+}
+
+
+/* Video presentation */
+
+.project-figure video {
+    display: block;
+
+    width: 100%;
+    height: auto;
+
+    max-height: 520px;
+
+    object-fit: contain;
+
+    background: #111827;
+
+    border-radius: 12px;
+    border: 1px solid #dbe2e8;
+}
+
+
+/* =========================================================
+   MANU RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 850px) {
+
+    .manu-hero-media .project-figure-wide,
+    .manu-secondary-figure,
+    .manu-simulation-section .project-figure-wide {
+        width: 100%;
+    }
+
+}
