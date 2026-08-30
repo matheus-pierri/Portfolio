@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>UBC Solar Wheel Hub | Matheus Pierri</title>
+    <title>UBC Solar Wheel Hub Design | Matheus Pierri</title>
 
     <link rel="stylesheet" href="../style.css">
 </head>
@@ -29,7 +29,10 @@
     <main class="project-page">
 
 
-        <!-- Project Hero -->
+        <!-- =====================================================
+             HERO
+             ===================================================== -->
+
         <section class="project-hero">
 
             <a class="back-link" href="../index.html#projects">
@@ -38,13 +41,15 @@
 
             <p class="eyebrow">UBC Solar · Vehicle Dynamics</p>
 
-            <h1>Front Wheel Hub Design & Validation</h1>
+            <h1>Front & Rear Wheel Hub Design & Validation</h1>
 
             <p class="project-intro">
-                End-to-end mechanical design of a custom lightweight wheel hub assembly
-                for UBC Solar's next-generation solar race car, integrating wheel,
-                brake, bearing, upright, and retention interfaces.
+                End-to-end mechanical design of custom lightweight front and rear
+                wheel hub assemblies for UBC Solar's next-generation race car,
+                integrating wheel, brake, bearing, upright, retention, manufacturing,
+                and assembly requirements.
             </p>
+
 
             <div class="project-meta">
 
@@ -54,18 +59,18 @@
                 </div>
 
                 <div>
-                    <span>Timeline</span>
-                    <strong>May 2025 – Present</strong>
+                    <span>Design Ownership</span>
+                    <strong>Front + Rear Hub Variants</strong>
                 </div>
 
                 <div>
                     <span>Primary Tools</span>
-                    <strong>SolidWorks · ANSYS · MATLAB · SKF SimPro</strong>
+                    <strong>SolidWorks · ANSYS · Excel · SKF SimPro</strong>
                 </div>
 
                 <div>
                     <span>Focus</span>
-                    <strong>Mechanical Design · FEA · Machine Design · GD&T</strong>
+                    <strong>Mechanical Design · FEA · Bearings · GD&T</strong>
                 </div>
 
             </div>
@@ -73,48 +78,83 @@
         </section>
 
 
-        <!-- Hero Image -->
-        <section class="project-content-section">
 
-            <div class="wide-image-placeholder">
-                Final Wheel Hub CAD / Assembly Hero Image
-            </div>
+        <!-- =====================================================
+             HERO IMAGE
+             ===================================================== -->
+
+        <section class="project-content-section solar-hero-media">
+
+            <figure class="project-figure project-figure-wide">
+
+                <img
+                    src="../images/solar/front-wheel-hub-final-assembly.png"
+                    alt="Final UBC Solar front wheel hub assembly including brake rotor, bearings, wheel interface and retention hardware">
+
+                <figcaption>
+                    <strong>Figure 1 — Final Front Wheel Hub Assembly.</strong>
+                    Integrated hub, brake rotor, tapered roller bearing system,
+                    wheel interface and axial retention hardware.
+                </figcaption>
+
+            </figure>
 
         </section>
 
 
-        <!-- Overview -->
+
+        <!-- =====================================================
+             01 OVERVIEW
+             ===================================================== -->
+
         <section class="project-content-section project-two-column">
 
             <div>
-                <p class="section-label">01 · Overview</p>
 
-                <h2>Designing a Critical Rotating Assembly</h2>
+                <p class="section-label">01 · Project Overview</p>
+
+                <h2>Owning Two Critical Rotating Assemblies</h2>
+
             </div>
+
 
             <div class="project-body-text">
 
                 <p>
-                    I have owned the mechanical development of the wheel hub system
-                    for UBC Solar's Cascadia vehicle, progressing from early concept
-                    development and benchmarking through detailed design, engineering
-                    validation, manufacturing documentation, and assembly planning.
+                    I have owned the mechanical development of both the front and rear
+                    wheel hub variants for UBC Solar's Cascadia vehicle, taking the
+                    system from benchmarking and concept development through detailed
+                    CAD, bearing selection, analytical calculations, FEA, manufacturing
+                    drawings, and assembly planning.
                 </p>
 
                 <p>
-                    The wheel hub acts as the central interface between the wheel,
-                    braking system, bearings, and suspension upright. This creates a
-                    tightly coupled design problem in which structural performance,
-                    mass, packaging, manufacturability, tolerances, serviceability,
-                    and component compatibility must all be considered together.
+                    The hub is the central mechanical interface between the wheel,
+                    brake rotor, bearings and suspension upright. A change in one of
+                    those interfaces can propagate through nearly every dimension and
+                    load path in the assembly.
                 </p>
 
                 <p>
-                    A major redesign became necessary after changes to the vehicle's
-                    wheel, brake rotor, and caliper architecture. Rather than adapting
-                    the previous spindle-based design, I developed a new live-hub
-                    configuration in which the hub itself serves as the rotating shaft
-                    through the bearing assembly.
+                    That became particularly important midway through the project.
+                    I had already developed and validated a complete spindle-based
+                    architecture when a sequence of vehicle-level changes began with
+                    the wheel selection, affected caliper packaging, and then required
+                    a different brake rotor configuration.
+                </p>
+
+                <p>
+                    Rather than repeatedly patching the existing geometry, I used the
+                    new requirements as an opportunity to rethink the system and
+                    developed a new live-hub architecture in which the aluminum hub
+                    itself passes through and rotates within the bearing pair.
+                </p>
+
+                <p>
+                    The front and rear versions share the same core architecture but
+                    were designed independently around their different packaging and
+                    loading requirements, giving me responsibility for both variants
+                    rather than simply adapting a counterpart's design.
                 </p>
 
             </div>
@@ -122,91 +162,173 @@
         </section>
 
 
-        <!-- Engineering Challenge -->
+
+        <!-- =====================================================
+             02 REDESIGN STORY
+             ===================================================== -->
+
         <section class="project-content-section project-highlight-section">
 
-            <p class="section-label">02 · Engineering Challenge</p>
+            <p class="section-label">02 · Major Design Iteration</p>
 
-            <h2>Redesigning Around New Vehicle Interfaces</h2>
+            <h2>A Cascade of Interface Changes Forced a Complete Redesign</h2>
 
-            <div class="project-three-column">
+
+            <div class="solar-redesign-flow">
 
                 <article>
-                    <h3>Packaging</h3>
-
+                    <span>Original Design</span>
+                    <strong>Hub + Separate Spindle</strong>
                     <p>
-                        Maintained clearance between the wheel, brake rotor, caliper,
-                        upright, suspension geometry, and retention hardware while
-                        minimizing overall axial length.
+                        Initial architecture developed, packaged and iteratively
+                        validated.
                     </p>
                 </article>
 
-                <article>
-                    <h3>Structural Performance</h3>
+                <div class="flow-arrow">→</div>
 
+                <article>
+                    <span>Vehicle Change</span>
+                    <strong>New Wheel</strong>
                     <p>
-                        Designed for combined bump, braking, and cornering loads while
-                        controlling deflection, fatigue performance, bearing loading,
-                        and local stress concentrations.
+                        Changed available packaging and interface geometry.
                     </p>
                 </article>
 
-                <article>
-                    <h3>Manufacturing & Assembly</h3>
+                <div class="flow-arrow">→</div>
 
+                <article>
+                    <span>Packaging Effect</span>
+                    <strong>Caliper Change</strong>
                     <p>
-                        Balanced precision bearing fits, CNC manufacturability,
-                        thermal assembly requirements, serviceability, sealing,
-                        and reliable mechanical retention.
+                        Required new axial spacing and clearance constraints.
                     </p>
                 </article>
+
+                <div class="flow-arrow">→</div>
+
+                <article>
+                    <span>Brake Effect</span>
+                    <strong>Rotor Change</strong>
+                    <p>
+                        Altered mounting geometry and the hub load path.
+                    </p>
+                </article>
+
+                <div class="flow-arrow">→</div>
+
+                <article>
+                    <span>Final Result</span>
+                    <strong>Live-Hub Redesign</strong>
+                    <p>
+                        New bearing, retention, rotor and wheel architecture.
+                    </p>
+                </article>
+
+            </div>
+
+
+            <div class="seaspan-impact-callout solar-design-callout">
+
+                <p>
+                    This became one of the most useful parts of the project:
+                    significant design work had already been completed, but the
+                    surrounding system changed enough that preserving the previous
+                    concept was no longer the best engineering decision.
+                </p>
+
+                <p>
+                    The redesign required me to revisit the problem from the system
+                    level rather than simply modifying dimensions until the old
+                    architecture fit.
+                </p>
 
             </div>
 
         </section>
 
 
-        <!-- Architecture -->
+
+        <!-- =====================================================
+             03 FINAL ARCHITECTURE
+             ===================================================== -->
+
         <section class="project-content-section project-two-column">
 
             <div>
+
                 <p class="section-label">03 · Final Architecture</p>
 
                 <h2>Live Hub with Back-to-Back Tapered Roller Bearings</h2>
 
-                <div class="image-placeholder">
-                    Wheel Hub Cross-Section / Exploded View
-                </div>
+
+                <figure class="project-figure">
+
+                    <video
+                        controls
+                        muted
+                        loop
+                        playsinline
+                        preload="metadata">
+
+                        <source
+                            src="../images/solar/wheel-hub-cad-assembly-simulation.mp4"
+                            type="video/mp4">
+
+                        Your browser does not support embedded video.
+
+                    </video>
+
+                    <figcaption>
+                        <strong>Video 1 — Wheel Hub CAD Assembly Simulation.</strong>
+                        Assembly relationships between the hub, bearings, upright,
+                        brake rotor, wheel interface and retention components.
+                    </figcaption>
+
+                </figure>
+
             </div>
+
 
             <div class="project-body-text">
 
                 <p>
-                    The final architecture uses a custom 6061-T6 aluminum hub
-                    supported by two SKF 33206 tapered roller bearings arranged
-                    back-to-back in an O configuration.
+                    The final design uses a custom 6061-T6 aluminum live hub supported
+                    by two SKF 33206 tapered roller bearings arranged back-to-back
+                    in an O configuration.
                 </p>
 
                 <p>
-                    The arrangement allows the bearing pair to support combined
-                    radial and axial wheel loads while providing high moment
-                    stiffness. A central upright shoulder locates the bearing
-                    outer rings, while the rotating hub interfaces directly
-                    with the bearing inner rings.
+                    The O arrangement increases the effective spread between bearing
+                    load centers, providing the moment stiffness needed to react wheel
+                    loads while allowing both bearings to contribute to radial and
+                    axial load support.
                 </p>
 
                 <p>
-                    The brake rotor mounts directly to an integrated hub shoulder
-                    using four bolted fasteners. The wheel is secured through a
-                    separate bolted locking-plate arrangement, allowing the hub
-                    geometry to distribute loads while maintaining removable
-                    interfaces for vehicle servicing.
+                    The bearing outer rings are located by a shoulder inside the
+                    upright, while the rotating hub interfaces directly with the
+                    bearing inner rings. The inner-ring seats therefore require
+                    controlled interference to prevent relative motion during operation.
                 </p>
 
                 <p>
-                    Axial bearing retention is provided through a stepped washer,
-                    castle nut, and cotter pin. V-ring seals protect both exposed
-                    bearing faces from contamination.
+                    The brake rotor mounts to an integrated hub shoulder using four
+                    bolts and locknuts, while the wheel is secured through the
+                    outboard flange using a separate multi-bolt interface.
+                </p>
+
+                <p>
+                    A stepped washer, M12 × 1.75 castle-nut interface and cotter pin
+                    provide axial retention. V-ring seals protect the exposed sides
+                    of the open tapered roller bearings from road contamination.
+                </p>
+
+                <p>
+                    The front variant is shorter to satisfy suspension packaging,
+                    while the rear geometry uses the available space differently.
+                    Maintaining a common bearing and retention architecture reduced
+                    unnecessary system variation between the two designs.
                 </p>
 
             </div>
@@ -214,139 +336,292 @@
         </section>
 
 
-        <!-- Bearing Engineering -->
-        <section class="project-content-section">
+
+        <!-- =====================================================
+             04 BEARING ENGINEERING
+             ===================================================== -->
+
+        <section class="project-content-section seaspan-focus-section">
 
             <p class="section-label">04 · Bearing System Engineering</p>
 
-            <h2>From Bearing Selection to Preload, Fits, and Life</h2>
+            <h2>Designing the Bearing System From First Principles</h2>
+
 
             <div class="project-feature-grid">
 
                 <article>
+
+                    <h3>Load Reactions</h3>
+
+                    <p>
+                        I built free-body diagrams and solved the force and moment
+                        equilibrium equations to convert tire-contact-patch loads
+                        into individual bearing reactions before entering them into
+                        bearing-selection and simulation tools.
+                    </p>
+
+                </article>
+
+
+                <article>
+
                     <h3>SKF 33206 Selection</h3>
 
                     <p>
-                        Evaluated bearing architectures and selected a tapered roller
-                        bearing pair capable of reacting combined radial and axial
-                        vehicle loads within the available package.
+                        Bearing concepts were compared for packaging, radial and
+                        axial load capacity, moment stiffness, friction, serviceability
+                        and life. A matched pair of 33206 tapered roller bearings
+                        provided the best overall architecture.
                     </p>
+
                 </article>
 
 
                 <article>
-                    <h3>Load Analysis</h3>
+
+                    <h3>Preload Strategy</h3>
 
                     <p>
-                        Developed free-body diagrams and force/moment equations to
-                        estimate bearing reactions under the combined design loading
-                        cases for both front and rear hub configurations.
+                        A preload target of approximately 2.2 kN was estimated and
+                        checked using SKF guidance and SimPro modeling. The castle-nut
+                        system provides the controllable axial clamping required to
+                        establish the bearing condition during assembly.
                     </p>
+
                 </article>
 
 
                 <article>
-                    <h3>Preload</h3>
+
+                    <h3>Precision Fits</h3>
 
                     <p>
-                        Estimated an approximately 2.2 kN bearing preload target and
-                        incorporated the requirement into the hub retention system
-                        and structural validation.
+                        I evaluated bearing tolerances, contact pressure, friction,
+                        aluminum-steel thermal expansion and operating temperature
+                        before selecting an m6 hub fit and M6 upright fit.
                     </p>
+
                 </article>
 
 
                 <article>
-                    <h3>Fits & Thermal Effects</h3>
+
+                    <h3>Thermal Behaviour</h3>
 
                     <p>
-                        Evaluated bearing tolerances, radial loading, aluminum-steel
-                        thermal expansion, and operating temperature to select
-                        interference-fit targets for the hub and upright.
+                        Fits were checked at both a nominal 20°C assembly condition
+                        and an approximately 40°C operating condition so differential
+                        thermal expansion would not unintentionally eliminate or
+                        excessively increase the intended fit.
                     </p>
+
                 </article>
 
 
                 <article>
-                    <h3>SKF SimPro Validation</h3>
 
-                    <p>
-                        Built SKF SimPro Quick models to validate bearing reactions,
-                        contact conditions, preload behaviour, safety factors,
-                        and predicted bearing life.
-                    </p>
-                </article>
-
-
-                <article>
                     <h3>Lubrication & Sealing</h3>
 
                     <p>
-                        Compared grease options based on friction and predicted life,
-                        selecting SKF LGWM2 alongside V-ring seals to reduce losses
-                        and protect the open bearing assembly.
+                        Grease options were compared using predicted friction and
+                        bearing-life effects. SKF LGWM2 was selected together with
+                        V-ring seals to minimize losses while protecting the open
+                        bearing system.
                     </p>
+
                 </article>
+
+            </div>
+
+
+            <div class="solar-figure-grid">
+
+                <figure class="project-figure">
+
+                    <img
+                        src="../images/solar/bearing-load-free-body-diagram.png"
+                        alt="Free body diagram showing wheel forces and inboard and outboard bearing reaction forces">
+
+                    <figcaption>
+                        <strong>Figure 2 — Bearing Load Free-Body Diagram.</strong>
+                        Tire loads are resolved into the reactions carried by the
+                        inboard and outboard bearings.
+                    </figcaption>
+
+                </figure>
+
+
+                <figure class="project-figure">
+
+                    <img
+                        src="../images/solar/skf-simpro-bearing-system-model.png"
+                        alt="SKF SimPro model of the back-to-back tapered roller bearing wheel hub system">
+
+                    <figcaption>
+                        <strong>Figure 3 — SKF SimPro Bearing System Model.</strong>
+                        Back-to-back tapered roller bearing arrangement used to
+                        cross-check analytical reactions, preload, safety and life.
+                    </figcaption>
+
+                </figure>
+
+            </div>
+
+
+            <div class="project-body-text project-text-wide">
+
+                <h3>Analytical Reaction Forces</h3>
+
+                <p>
+                    For the severe combined loading case, I used equilibrium equations
+                    to solve the bearing reactions before relying on simulation.
+                    The spreadsheet model applies the braking, bump and cornering loads
+                    at the tire contact patch and accounts for the offsets between the
+                    tire and each bearing.
+                </p>
+
+                <p>
+                    In one representative front-wheel case, this produced approximately
+                    9.39 kN radial load at the inboard bearing, 7.22 kN at the outboard
+                    bearing, and 1.46 kN of axial load at the outboard bearing.
+                    Those reaction forces then became inputs to the SKF analysis and
+                    later structural models.
+                </p>
+
+
+                <h3>Why the Fits Required More Than a Lookup Table</h3>
+
+                <p>
+                    Because the hub rotates inside the bearing inner rings, relative
+                    motion at that interface would risk fretting and loss of fit.
+                    The inner-ring interface therefore required interference.
+                </p>
+
+                <p>
+                    I calculated the resulting interference pressure and frictional
+                    holding force, then repeated the geometry at operating temperature
+                    because the 6061-T6 hub expands faster than the steel bearing.
+                    The upright-to-outer-ring interface was treated differently:
+                    the goal was only a very light interference or near-nominal
+                    condition at operating temperature.
+                </p>
 
             </div>
 
         </section>
 
 
-        <!-- Analysis -->
+
+        <!-- =====================================================
+             05 STRUCTURAL VALIDATION
+             ===================================================== -->
+
         <section class="project-content-section project-analysis-section">
 
             <div>
+
                 <p class="section-label">05 · Structural Validation</p>
 
-                <h2>FEA & Mechanical Analysis</h2>
+                <h2>FEA, Bearing Safety & Weight Optimization</h2>
 
                 <p class="section-summary">
-                    The hub was evaluated using both analytical machine-design
-                    calculations and finite-element models rather than relying
-                    on a single validation method.
+                    Analytical machine-design calculations and finite-element
+                    simulation were used together so the design could be optimized
+                    for mass without reducing structural margin below the team's
+                    target.
                 </p>
+
             </div>
 
 
-            <div class="analysis-metric-grid">
+            <div class="analysis-metric-grid solar-metric-grid">
 
                 <article>
-                    <span>Design Load Case</span>
-                    <strong>2g / 1g / 1g</strong>
-                    <p>Bump / braking / cornering</p>
+                    <span>Front Hub FoS</span>
+                    <strong>1.53</strong>
+                    <p>vs. 1.50 design target</p>
                 </article>
 
                 <article>
-                    <span>Bearing Preload</span>
-                    <strong>≈ 2.2 kN</strong>
-                    <p>Target preload for TRB pair</p>
+                    <span>Rear Hub FoS</span>
+                    <strong>2.30</strong>
+                    <p>under severe combined loading</p>
                 </article>
 
                 <article>
-                    <span>Calculated Misalignment</span>
+                    <span>Bearing FoS</span>
+                    <strong>5.3</strong>
+                    <p>worst-case bearing condition</p>
+                </article>
+
+                <article>
+                    <span>Bearing Life</span>
+                    <strong>≈ 15,000 h</strong>
+                    <p>predicted under severe loading</p>
+                </article>
+
+                <article>
+                    <span>Front Hub Mass</span>
+                    <strong>0.99 kg</strong>
+                    <p>custom 6061-T6 component</p>
+                </article>
+
+                <article>
+                    <span>Front Assembly</span>
+                    <strong>2.15 kg</strong>
+                    <p>vs. 2.50 kg previous car</p>
+                </article>
+
+                <article>
+                    <span>Mass Reduction</span>
+                    <strong>14%</strong>
+                    <p>front hub assembly improvement</p>
+                </article>
+
+                <article>
+                    <span>Misalignment</span>
                     <strong>1.18 arcmin</strong>
                     <p>vs. 4 arcmin allowable</p>
                 </article>
 
-                <article>
-                    <span>Predicted Bearing Life</span>
-                    <strong>≈ 15,000 h</strong>
-                    <p>Under severe design loading</p>
-                </article>
-
             </div>
 
 
-            <div class="project-image-grid">
+            <div class="solar-figure-grid">
 
-                <div class="image-placeholder">
-                    ANSYS Stress / Factor of Safety
-                </div>
+                <figure class="project-figure">
 
-                <div class="image-placeholder">
-                    SKF SimPro Quick Results
-                </div>
+                    <img
+                        src="../images/solar/front-hub-ansys-factor-of-safety.png"
+                        alt="ANSYS factor of safety result for UBC Solar front wheel hub">
+
+                    <figcaption>
+                        <strong>Figure 4 — Front Hub ANSYS Factor of Safety.</strong>
+                        Severe 2g bump / 1g braking / 1g cornering load case;
+                        minimum FoS approximately 1.53 against a 1.50 target.
+                    </figcaption>
+
+                </figure>
+
+
+                <!-- OPTIONAL:
+                     Keep this figure only if you decide the setup image adds value.
+
+                <figure class="project-figure">
+
+                    <img
+                        src="../images/solar/front-hub-ansys-analysis-setup.png"
+                        alt="ANSYS wheel hub boundary conditions and elastic bearing support setup">
+
+                    <figcaption>
+                        <strong>Figure 5 — ANSYS Analysis Setup.</strong>
+                        Bearing-interface supports and representative wheel-load
+                        application used for structural and displacement analysis.
+                    </figcaption>
+
+                </figure>
+                -->
 
             </div>
 
@@ -356,34 +631,42 @@
                 <h3>ANSYS Structural Analysis</h3>
 
                 <p>
-                    I developed static and fatigue finite-element models representing
-                    the wheel load path through the hub and bearing interfaces.
-                    Combined bump, braking, and cornering forces were applied at the
-                    tire contact patch and transferred into the hub assembly.
+                    I developed separate front and rear finite-element models using
+                    the combined 2g bump, 1g braking and 1g cornering design case.
+                    These loads were chosen to represent a deliberately severe
+                    simultaneous event rather than an ordinary operating condition.
                 </p>
 
                 <p>
-                    Results were used iteratively rather than solely for final
-                    verification. Low-stress regions were identified for mass
-                    reduction, while geometry around highly loaded fillets,
-                    bearing seats, and interfaces was adjusted to improve structural
-                    performance.
-                </p>
-
-
-                <h3>Bearing Misalignment</h3>
-
-                <p>
-                    To evaluate whether elastic deformation of the hub and upright
-                    could exceed the tapered roller bearing's allowable angular
-                    misalignment, I represented bearing and upright compliance using
-                    elastic supports in ANSYS.
+                    FEA became an iterative design tool rather than a final pass/fail
+                    check. Low-stress regions were progressively reduced to remove
+                    unnecessary material, while fillets, flange transitions, bearing
+                    seats and highly loaded interfaces were adjusted when local
+                    stresses became limiting.
                 </p>
 
                 <p>
-                    The resulting worst-case bearing-seat displacement corresponded
-                    to approximately 1.18 arcminutes of angular misalignment,
-                    comfortably below the approximately 4 arcminute allowable limit.
+                    The final front design reached a minimum static factor of safety
+                    of 1.53, just above the 1.50 design target, while the rear variant
+                    retained a larger margin at 2.30. That difference reflects the
+                    different packaging and geometry of the two hubs rather than
+                    simply scaling one design.
+                </p>
+
+
+                <h3>Mass as a Design Constraint</h3>
+
+                <p>
+                    Weight was tracked alongside structural performance throughout
+                    the design process because hub mass contributes directly to
+                    unsprung and rotating mass.
+                </p>
+
+                <p>
+                    The final front hub component is approximately 0.99 kg and the
+                    complete front hub assembly is approximately 2.15 kg, representing
+                    a 14% reduction from the approximately 2.50 kg assembly used on
+                    the previous vehicle.
                 </p>
 
             </div>
@@ -391,53 +674,188 @@
         </section>
 
 
-        <!-- Machine Design -->
+
+        <!-- =====================================================
+             06 BEARING MISALIGNMENT
+             ===================================================== -->
+
+        <section class="project-content-section project-highlight-section">
+
+            <p class="section-label">06 · Bearing Misalignment Validation</p>
+
+            <h2>Checking Whether Structural Deflection Could Damage the Bearings</h2>
+
+
+            <div class="project-two-column">
+
+                <div class="project-body-text">
+
+                    <p>
+                        Tapered roller bearings can tolerate only limited angular
+                        misalignment. A hub that is structurally strong enough to avoid
+                        yielding could therefore still be unacceptable if elastic
+                        bending causes the two bearing seats to rotate too far relative
+                        to one another.
+                    </p>
+
+                    <p>
+                        To model this without building a fully detailed bearing and
+                        upright contact model, I represented their radial compliance
+                        as elastic supports in ANSYS.
+                    </p>
+
+                    <p>
+                        Upright support stiffness was estimated from the radial
+                        stiffness relationship
+                        <strong>k = EA / t</strong>. Because ANSYS required distributed
+                        stiffness in N/mm³, the area term was removed and the support
+                        input was derived from <strong>E / t</strong>, with an additional
+                        reduction factor used to avoid treating the full upright as a
+                        perfectly bonded rigid support.
+                    </p>
+
+                </div>
+
+
+                <div class="solar-calculation-card">
+
+                    <span>Worst-Case Seat Deflection</span>
+
+                    <strong>4.28 μm</strong>
+
+                    <p>
+                        Differential displacement measured over half of the
+                        25 mm bearing width:
+                    </p>
+
+                    <div class="solar-equation">
+                        θ ≈ 4.28 μm / 12.5 mm
+                    </div>
+
+                    <div class="solar-equation">
+                        θ ≈ 3.42 × 10<sup>-4</sup> rad
+                    </div>
+
+                    <div class="solar-equation">
+                        θ ≈ 0.020° ≈ 1.18 arcmin
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="seaspan-impact-callout solar-design-callout">
+
+                <p>
+                    <strong>Result:</strong> approximately 1.18 arcmin of predicted
+                    misalignment versus SKF's approximately 4 arcmin allowable value.
+                </p>
+
+                <p>
+                    The calculation was intentionally conservative because the
+                    outer-ring/upright face was treated as having effectively zero
+                    angular movement; including its deformation would reduce the
+                    relative bearing-ring misalignment further.
+                </p>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             07 MACHINE DESIGN
+             ===================================================== -->
+
         <section class="project-content-section">
 
-            <p class="section-label">06 · Machine Design</p>
+            <p class="section-label">07 · Machine Design</p>
 
             <h2>Validating the Interfaces Around the Hub</h2>
+
 
             <div class="project-feature-grid">
 
                 <article>
+
                     <h3>Rotor Fasteners</h3>
 
                     <p>
-                        Applied Shigley's bolted-joint methods to size preload and
-                        verify no-slip, static, and fatigue safety of the brake
-                        rotor connection under combined vehicle loading.
+                        Used Shigley's bolted-joint methods to calculate primary and
+                        secondary shear, preload, member stiffness, no-slip capacity,
+                        von Mises stress and fatigue performance for the four-bolt
+                        brake-rotor interface.
                     </p>
+
                 </article>
 
+
                 <article>
+
+                    <h3>Frictional Load Transfer</h3>
+
+                    <p>
+                        Rather than designing the bolts to carry all braking shear
+                        directly through their shanks, preload was selected so much
+                        of the interface load could be transmitted by friction between
+                        the clamped surfaces.
+                    </p>
+
+                </article>
+
+
+                <article>
+
                     <h3>Wheel Interface</h3>
 
                     <p>
-                        Evaluated wheel-retention fasteners and frictional load
-                        transfer to ensure the bolted interface could safely transmit
-                        braking, cornering, and bump loads.
+                        The wheel attachment was evaluated against combined bump,
+                        braking and cornering forces, with bolt quantity and preload
+                        considered alongside flange geometry and assembly access.
                     </p>
+
                 </article>
 
+
                 <article>
-                    <h3>Threaded Retention</h3>
+
+                    <h3>Castle-Nut Threads</h3>
 
                     <p>
-                        Checked the bearing retention system against thread shear,
-                        pull-out, preload, and external axial loading to ensure
-                        reliable mechanical locking.
+                        The M12 × 1.75 retention interface was checked for axial
+                        stress, external-thread pull-out and nut-thread pull-out
+                        under preload plus worst-case external axial loading.
                     </p>
+
                 </article>
 
+
                 <article>
-                    <h3>Thermal Assembly</h3>
+
+                    <h3>Interference Fits</h3>
 
                     <p>
-                        Calculated differential thermal expansion between aluminum
-                        components and steel bearing rings to confirm that precision
-                        interference fits could be assembled without damaging parts.
+                        Fit calculations estimated contact pressure, frictional
+                        holding force and resistance to the fit being overcome,
+                        providing an analytical check alongside ISO fit selection.
                     </p>
+
+                </article>
+
+
+                <article>
+
+                    <h3>Assembly Temperature</h3>
+
+                    <p>
+                        Differential thermal expansion was evaluated to determine
+                        whether bearing rings could be installed using controlled
+                        heating and cooling without requiring damaging installation
+                        forces.
+                    </p>
+
                 </article>
 
             </div>
@@ -445,52 +863,81 @@
         </section>
 
 
-        <!-- Manufacturing -->
+
+        <!-- =====================================================
+             08 MANUFACTURING
+             ===================================================== -->
+
         <section class="project-content-section project-two-column">
 
             <div>
-                <p class="section-label">07 · Manufacturing Readiness</p>
+
+                <p class="section-label">08 · Manufacturing Readiness</p>
 
                 <h2>Taking the Design Beyond CAD</h2>
 
-                <div class="image-placeholder">
-                    Final Manufacturing Drawing
-                </div>
+
+                <figure class="project-figure">
+
+                    <img
+                        src="../images/solar/front-wheel-hub-manufacturing-drawing.png"
+                        alt="Manufacturing drawing for UBC Solar front wheel hub showing bearing fits, geometric tolerances and machining dimensions">
+
+                    <figcaption>
+                        <strong>Figure 5 — Front Wheel Hub Manufacturing Drawing.</strong>
+                        ASME Y14.5-based drawing defining critical bearing fits,
+                        GD&T, threads, wheel and rotor patterns, material and
+                        machining requirements.
+                    </figcaption>
+
+                </figure>
 
             </div>
+
 
             <div class="project-body-text">
 
                 <h3>Engineering Drawing</h3>
 
                 <p>
-                    I produced the front wheel hub manufacturing drawing in
-                    accordance with ASME Y14.5 conventions, specifying critical
-                    bearing seats, fits, geometric tolerances, threads, bolt
-                    patterns, material, and general machining requirements.
+                    I produced the front hub manufacturing drawing to ASME Y14.5
+                    conventions, defining the 30 mm bearing seat and m6 fit,
+                    geometric controls, M12 × 1.75 retention thread, four-hole rotor
+                    pattern, nine-hole wheel pattern, and other critical machining
+                    geometry.
                 </p>
 
                 <p>
-                    Particular attention was given to the bearing interfaces because
-                    small dimensional errors directly affect preload, assembly
-                    behaviour, bearing life, and rotating alignment.
+                    The bearing seats received particular attention because dimensional
+                    and geometric error at those surfaces directly affects interference,
+                    rotating alignment, preload and bearing life.
                 </p>
 
 
                 <h3>Assembly Buildbook</h3>
 
                 <p>
-                    I also developed a detailed assembly buildbook defining the
-                    parts, tools, safety requirements, bearing preparation,
-                    lubrication, thermal-fit sequence, rotor installation,
-                    sealing, retention hardware, and final wheel installation.
+                    I also developed the assembly buildbook covering parts and tools,
+                    safety, bearing preparation, lubrication, thermal installation,
+                    rotor mounting, sealing, castle-nut retention, cotter-pin locking
+                    and final wheel installation.
                 </p>
 
                 <p>
-                    Developing the assembly procedure forced the design to be
-                    evaluated from the perspective of the person actually building
-                    and servicing the vehicle, exposing practical constraints that
-                    are easy to overlook during CAD development.
+                    Writing the assembly procedure exposed practical issues that are
+                    easy to miss in CAD—tool access, installation order, temporary
+                    support, protecting bearing surfaces, checking fit during assembly,
+                    and ensuring that components can later be serviced.
+                </p>
+
+
+                <h3>Design for Manufacturing</h3>
+
+                <p>
+                    The final geometry was designed around machining from 6061-T6
+                    aluminum stock. Feature accessibility, tool approach, fillet size,
+                    stock diameter, tolerance cost and the number of machining setups
+                    were considered alongside structural optimization.
                 </p>
 
             </div>
@@ -498,44 +945,182 @@
         </section>
 
 
-        <!-- Design Process -->
-        <section class="project-content-section project-highlight-section">
 
-            <p class="section-label">08 · Design Process</p>
+        <!-- =====================================================
+             09 FRONT VS REAR
+             ===================================================== -->
 
-            <h2>What the Project Taught Me</h2>
+        <section class="project-content-section solar-variant-section">
+
+            <p class="section-label">09 · Two Hub Variants</p>
+
+            <h2>One Architecture, Different Vehicle Constraints</h2>
+
+            <p class="section-summary">
+                Designing both variants meant maintaining a common system philosophy
+                while independently validating the packaging and structural behaviour
+                required at the front and rear of the car.
+            </p>
+
 
             <div class="project-three-column">
 
                 <article>
-                    <h3>Systems Thinking</h3>
+
+                    <h3>Front Hub</h3>
 
                     <p>
-                        A wheel hub cannot be optimized independently. Changes to
-                        wheels, brakes, bearings, suspension, manufacturing, or
-                        assembly propagate through the entire design.
+                        More packaging-constrained by the suspension and brake system,
+                        requiring a shorter geometry and tighter structural optimization.
                     </p>
+
+                    <strong class="solar-small-stat">FoS 1.53</strong>
+
                 </article>
 
+
                 <article>
-                    <h3>Engineering Iteration</h3>
+
+                    <h3>Shared Architecture</h3>
 
                     <p>
-                        The strongest design decisions came from repeatedly moving
-                        between CAD, calculations, simulation, supplier data,
-                        packaging constraints, and team feedback.
+                        6061-T6 live hub, SKF 33206 bearing pair, back-to-back
+                        arrangement, rotor interface, V-ring sealing and castle-nut
+                        retention philosophy.
                     </p>
+
+                    <strong class="solar-small-stat">2 × SKF 33206</strong>
+
                 </article>
 
+
                 <article>
-                    <h3>Design for Reality</h3>
+
+                    <h3>Rear Hub</h3>
 
                     <p>
-                        A technically valid CAD model is only part of a successful
-                        design. Tolerances, manufacturing capability, assembly
-                        sequence, serviceability, documentation, and component
-                        availability matter just as much.
+                        Developed independently around its available package and load
+                        path while retaining common components where practical.
                     </p>
+
+                    <strong class="solar-small-stat">FoS 2.30</strong>
+
+                </article>
+
+            </div>
+
+
+            <!--
+            OPTIONAL HIGH-VALUE FIGURE:
+
+            <figure class="project-figure project-figure-wide solar-comparison-figure">
+
+                <img
+                    src="../images/solar/front-rear-wheel-hub-comparison.png"
+                    alt="Side by side CAD comparison of the front and rear UBC Solar wheel hubs">
+
+                <figcaption>
+                    <strong>Figure 6 — Front and Rear Hub Variant Comparison.</strong>
+                    Shared live-hub architecture adapted to the distinct packaging
+                    requirements of the front and rear vehicle locations.
+                </figcaption>
+
+            </figure>
+            -->
+
+        </section>
+
+
+
+        <!-- =====================================================
+             10 DESIGN PROCESS
+             ===================================================== -->
+
+        <section class="project-content-section project-highlight-section">
+
+            <p class="section-label">10 · Engineering Process</p>
+
+            <h2>What Made the Project Valuable</h2>
+
+
+            <div class="project-feature-grid">
+
+                <article>
+
+                    <h3>Designs Must Survive Requirement Changes</h3>
+
+                    <p>
+                        The wheel-caliper-rotor cascade showed that a mature design
+                        can still need to be replaced when higher-level vehicle
+                        interfaces change.
+                    </p>
+
+                </article>
+
+
+                <article>
+
+                    <h3>Calculate Before Simulating</h3>
+
+                    <p>
+                        Free-body diagrams, bearing reactions, bolted-joint equations,
+                        fit calculations and thermal checks gave me independent ways
+                        to validate simulation outputs.
+                    </p>
+
+                </article>
+
+
+                <article>
+
+                    <h3>Simulation Should Guide Design</h3>
+
+                    <p>
+                        ANSYS was used iteratively to locate unnecessary material and
+                        limiting geometry rather than simply generating a final
+                        colourful stress plot.
+                    </p>
+
+                </article>
+
+
+                <article>
+
+                    <h3>Components Behave as a System</h3>
+
+                    <p>
+                        Bearing preload changes retention loads; fits change assembly;
+                        rotor geometry changes hub packaging; deflection affects
+                        bearing alignment. Individual calculations had to remain
+                        consistent with the complete assembly.
+                    </p>
+
+                </article>
+
+
+                <article>
+
+                    <h3>Supplier Data Matters</h3>
+
+                    <p>
+                        Bearing limits, tolerances, preload guidance, lubrication,
+                        sealing and life calculations relied on interpreting
+                        manufacturer information and incorporating it into the design.
+                    </p>
+
+                </article>
+
+
+                <article>
+
+                    <h3>Design Ends at Assembly, Not CAD</h3>
+
+                    <p>
+                        Drawings, tools, thermal-fit procedures, lubrication,
+                        fastener access and serviceability were treated as engineering
+                        requirements rather than tasks left until after design.
+                    </p>
+
                 </article>
 
             </div>
@@ -543,38 +1128,55 @@
         </section>
 
 
-        <!-- Skills -->
+
+        <!-- =====================================================
+             SKILLS
+             ===================================================== -->
+
         <section class="project-content-section">
 
-            <p class="section-label">09 · Skills & Tools</p>
+            <p class="section-label">11 · Skills & Tools</p>
 
             <h2>Technical Areas</h2>
+
 
             <div class="skill-tags">
 
                 <span>SolidWorks</span>
                 <span>ANSYS Mechanical</span>
                 <span>SKF SimPro Quick</span>
-                <span>MATLAB</span>
+                <span>Microsoft Excel</span>
+
                 <span>Mechanical Design</span>
-                <span>FEA</span>
                 <span>Machine Design</span>
-                <span>Bearings</span>
+                <span>FEA</span>
+                <span>Fatigue Analysis</span>
+
+                <span>Tapered Roller Bearings</span>
+                <span>Bearing Preload</span>
+                <span>Interference Fits</span>
+                <span>Thermal Fits</span>
+
+                <span>Bolted Joints</span>
+                <span>Free-Body Diagrams</span>
                 <span>GD&T</span>
                 <span>ASME Y14.5</span>
-                <span>Interference Fits</span>
-                <span>Fatigue Analysis</span>
-                <span>Bolted Joints</span>
+
                 <span>DFMA</span>
                 <span>Technical Drawings</span>
-                <span>Design Documentation</span>
+                <span>Assembly Planning</span>
+                <span>Technical Documentation</span>
 
             </div>
 
         </section>
 
 
-        <!-- Next -->
+
+        <!-- =====================================================
+             NEXT PROJECT
+             ===================================================== -->
+
         <section class="project-next">
 
             <p>Next Project</p>
