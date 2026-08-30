@@ -29,29 +29,35 @@
     <main class="project-page">
 
 
-        <!-- Hero -->
+        <!-- =====================================================
+             HERO
+             ===================================================== -->
+
         <section class="project-hero">
 
             <a class="back-link" href="../index.html#projects">
                 ← Back to Projects
             </a>
 
-            <p class="eyebrow">Mechatronics · Embedded Systems Project</p>
+            <p class="eyebrow">
+                Instrumentation & Design · Mechatronics Project
+            </p>
 
             <h1>Autonomous Line-Following & BLE-Controlled Robot</h1>
 
             <p class="project-intro">
-                Designed, fabricated, wired, and programmed a differential-drive robot
-                capable of autonomous black-line following and Bluetooth Low Energy
-                wireless control.
+                Designed, fabricated, wired, and programmed a differential-drive
+                mobile robot capable of autonomous black-line following and
+                Bluetooth Low Energy wireless control as part of a two-person
+                instrumentation and design course project.
             </p>
 
 
             <div class="project-meta">
 
                 <div>
-                    <span>Project</span>
-                    <strong>University Team Project</strong>
+                    <span>Team</span>
+                    <strong>2 Students</strong>
                 </div>
 
                 <div>
@@ -74,17 +80,34 @@
         </section>
 
 
-        <!-- Hero Image -->
-        <section class="project-content-section">
+        <!-- =====================================================
+             HERO IMAGE
+             ===================================================== -->
 
-            <div class="wide-image-placeholder">
-                Final Robot / Robot in Operation
-            </div>
+        <section class="project-content-section robot-hero-media">
+
+            <figure class="project-figure project-figure-wide">
+
+                <img
+                    src="../images/robot/ble-robot-final-assembly.png"
+                    alt="Final assembled line-following and BLE-controlled mobile robot">
+
+                <figcaption>
+                    <strong>Figure 1 — Final BLE Robot Assembly.</strong>
+                    Completed differential-drive platform integrating the custom
+                    chassis, motors, electronics, sensors, battery system, and
+                    embedded controller.
+                </figcaption>
+
+            </figure>
 
         </section>
 
 
-        <!-- Overview -->
+        <!-- =====================================================
+             01 OVERVIEW
+             ===================================================== -->
+
         <section class="project-content-section project-two-column">
 
             <div>
@@ -99,30 +122,29 @@
             <div class="project-body-text">
 
                 <p>
-                    This project combined mechanical design, additive manufacturing,
-                    electronics integration, embedded programming, sensing, and wireless
-                    communication into a single mobile robotic platform.
+                    This project was completed by a two-person team as part of an
+                    instrumentation and design course focused on integrating sensing,
+                    electronics, programming, and physical system design.
                 </p>
 
                 <p>
-                    The robot used differential drive and onboard sensors to autonomously
-                    detect and follow a black line, while a separate Bluetooth Low Energy
-                    control mode allowed wireless manual operation.
+                    The objective was to build a mobile robot that could operate in
+                    two distinct modes: autonomous line following using onboard
+                    sensors, and wireless manual control through Bluetooth Low Energy.
                 </p>
 
                 <p>
-                    Our team designed and assembled the physical platform ourselves,
-                    including the 3D-printed chassis and wheels, battery integration,
-                    fastened mechanical interfaces, motors, sensors, and soldered
-                    electronics.
+                    We designed and assembled the complete platform ourselves,
+                    including the 3D-printed chassis and wheels, motors, batteries,
+                    sensors, mechanical fasteners, soldered electronics, and embedded
+                    control system.
                 </p>
 
                 <p>
-                    The project required the mechanical, electrical, and software
-                    subsystems to work reliably together. Problems could not be solved
-                    in isolation because sensor placement, chassis geometry, motor
-                    response, wiring, control logic, and communication behaviour all
-                    affected system performance.
+                    The main challenge was integration. Mechanical layout affected
+                    sensor placement and wiring, sensor behavior affected control
+                    logic, and motor response affected whether the robot could
+                    reliably follow the intended path.
                 </p>
 
             </div>
@@ -130,7 +152,10 @@
         </section>
 
 
-        <!-- System -->
+        <!-- =====================================================
+             02 SYSTEM ARCHITECTURE
+             ===================================================== -->
+
         <section class="project-content-section project-highlight-section">
 
             <p class="section-label">02 · System Architecture</p>
@@ -145,9 +170,9 @@
                     <h3>Mechanical Platform</h3>
 
                     <p>
-                        Designed and assembled a compact 3D-printed chassis and wheel
-                        system around the motors, electronics, batteries, sensors,
-                        and required mounting hardware.
+                        Designed and assembled a compact 3D-printed chassis and
+                        wheel system around the motors, electronics, sensors,
+                        batteries, and mounting hardware.
                     </p>
 
                 </article>
@@ -155,12 +180,12 @@
 
                 <article>
 
-                    <h3>Electronics</h3>
+                    <h3>Electronics & Instrumentation</h3>
 
                     <p>
-                        Integrated and soldered the control electronics, motors,
-                        sensors, power system, and Arduino hardware into a functional
-                        mobile platform.
+                        Integrated and soldered the controller, motors, sensor
+                        connections, power system, and supporting electronics into
+                        a functional mobile platform.
                     </p>
 
                 </article>
@@ -171,8 +196,9 @@
                     <h3>Embedded Control</h3>
 
                     <p>
-                        Programmed autonomous and wireless-control modes, translating
-                        sensor inputs and BLE commands into differential motor response.
+                        Programmed autonomous and BLE-controlled operating modes,
+                        translating sensor inputs and wireless commands into
+                        differential motor response.
                     </p>
 
                 </article>
@@ -182,18 +208,17 @@
         </section>
 
 
-        <!-- Mechanical -->
+        <!-- =====================================================
+             03 MECHANICAL DESIGN
+             ===================================================== -->
+
         <section class="project-content-section project-two-column">
 
             <div>
 
                 <p class="section-label">03 · Mechanical Design & Fabrication</p>
 
-                <h2>Designing the Physical Platform</h2>
-
-                <div class="image-placeholder">
-                    Chassis CAD / 3D Printing / Assembly Photo
-                </div>
+                <h2>Packaging the Robot Around the System</h2>
 
             </div>
 
@@ -201,22 +226,22 @@
             <div class="project-body-text">
 
                 <p>
-                    The robot chassis and wheels were produced through additive
-                    manufacturing, allowing the mechanical layout to be designed
-                    specifically around the required electronics and drive components.
+                    The chassis and wheels were manufactured through additive
+                    manufacturing, allowing the geometry to be developed specifically
+                    around the electronics, motors, sensors, and battery package.
                 </p>
 
                 <p>
-                    Component packaging had to account for motor position, wheel
-                    alignment, sensor placement, battery access, wire routing,
-                    fastener locations, and sufficient structural rigidity without
-                    unnecessarily increasing the size of the robot.
+                    Packaging decisions included motor location, wheel alignment,
+                    sensor position, battery access, wiring routes, fastener
+                    locations, and maintaining enough rigidity for repeatable
+                    sensor-to-ground geometry.
                 </p>
 
                 <p>
-                    The final assembly used mechanical fasteners to secure the batteries,
-                    electronics, and other components while keeping the system accessible
-                    for troubleshooting and modification during testing.
+                    Mechanical fasteners were used to keep major components secure
+                    while preserving access for troubleshooting and modification
+                    during development.
                 </p>
 
             </div>
@@ -224,7 +249,10 @@
         </section>
 
 
-        <!-- Electronics -->
+        <!-- =====================================================
+             04 ELECTRONICS
+             ===================================================== -->
+
         <section class="project-content-section project-highlight-section">
 
             <div class="project-two-column">
@@ -235,9 +263,20 @@
 
                     <h2>From Components to a Working Robot</h2>
 
-                    <div class="image-placeholder">
-                        Soldering / Electronics Board / Wiring
-                    </div>
+
+                    <figure class="project-figure">
+
+                        <img
+                            src="../images/robot/ble-robot-soldering-assembly.png"
+                            alt="Soldering and assembling electronics for the BLE mobile robot">
+
+                        <figcaption>
+                            <strong>Figure 2 — Electronics Assembly & Soldering.</strong>
+                            Hands-on integration of the robot's electrical system,
+                            including controller, motor, sensor, and power connections.
+                        </figcaption>
+
+                    </figure>
 
                 </div>
 
@@ -245,22 +284,36 @@
                 <div class="project-body-text">
 
                     <p>
-                        The electrical system was assembled and soldered by the team,
-                        combining the Arduino controller, motor connections, sensors,
-                        power system, and supporting electronics.
+                        The electronics were assembled and soldered as part of the
+                        project rather than relying on a pre-built robotic platform.
                     </p>
 
                     <p>
-                        Wiring and component layout became an important part of the
-                        mechanical design because the robot needed to remain compact
-                        while allowing reliable connections and access for debugging.
+                        The system combined the Arduino controller, motors, sensors,
+                        battery supply, and supporting electrical connections within
+                        a compact chassis.
                     </p>
 
                     <p>
-                        Integration testing was performed progressively rather than
-                        waiting until the full robot was assembled. Individual sensors,
-                        motors, wireless communication, and control functions were
-                        checked before being combined into the final system.
+                        Wiring layout became part of the mechanical design because
+                        connections needed to remain secure while still being
+                        accessible enough to debug throughout testing.
+                    </p>
+
+
+                    <h3>Progressive Integration</h3>
+
+                    <p>
+                        Individual functions were tested before combining the entire
+                        robot. Motors, sensors, wireless communication, and control
+                        behavior were each verified separately before full-system
+                        operation.
+                    </p>
+
+                    <p>
+                        This made troubleshooting significantly easier because faults
+                        could be isolated to a specific subsystem rather than treating
+                        every unexpected behavior as a software problem.
                     </p>
 
                 </div>
@@ -270,12 +323,15 @@
         </section>
 
 
-        <!-- Autonomous Control -->
+        <!-- =====================================================
+             05 AUTONOMOUS LINE FOLLOWING
+             ===================================================== -->
+
         <section class="project-content-section">
 
             <p class="section-label">05 · Autonomous Line Following</p>
 
-            <h2>Using Sensor Feedback for Closed-Loop Motion</h2>
+            <h2>Using Sensor Feedback to Control Motion</h2>
 
 
             <div class="project-two-column">
@@ -283,49 +339,75 @@
                 <div class="project-body-text">
 
                     <p>
-                        In autonomous mode, the robot used line-sensor information to
-                        determine its position relative to a black path and continuously
-                        adjust the left and right motor commands.
+                        In autonomous mode, onboard line sensors detected the robot's
+                        position relative to a black path.
                     </p>
 
                     <p>
-                        Differential-drive control allowed the robot to correct its
-                        heading by changing the relative speeds of the two drive motors,
-                        enabling it to follow curves and recover from small path errors.
+                        The embedded program continuously interpreted the sensor
+                        response and adjusted the relative commands sent to the left
+                        and right motors.
                     </p>
 
                     <p>
-                        Achieving repeatable behaviour required tuning the relationship
-                        between sensor response and motor actuation rather than simply
-                        detecting whether a line was present.
+                        Because the robot used differential drive, steering could be
+                        controlled by changing the relative wheel speeds rather than
+                        using a separate steering mechanism.
+                    </p>
+
+                    <p>
+                        Reliable line following required repeated physical testing and
+                        tuning. Sensor placement, threshold behavior, motor response,
+                        vehicle speed, and steering corrections all affected whether
+                        the robot could recover smoothly from path deviations.
                     </p>
 
                 </div>
 
 
-                <div class="image-placeholder">
-                    Line-Following Robot / Test Course
-                </div>
+                <figure class="project-figure">
+
+                    <video
+                        controls
+                        muted
+                        loop
+                        playsinline
+                        preload="metadata">
+
+                        <source
+                            src="../images/robot/ble-robot-testing.mp4"
+                            type="video/mp4">
+
+                        Your browser does not support embedded video.
+
+                    </video>
+
+                    <figcaption>
+                        <strong>Video 1 — Robot Testing & Line-Following Validation.</strong>
+                        Physical testing used to tune sensor-driven steering and
+                        verify repeatable autonomous path following.
+                    </figcaption>
+
+                </figure>
 
             </div>
 
         </section>
 
 
-        <!-- BLE -->
+        <!-- =====================================================
+             06 BLE CONTROL
+             ===================================================== -->
+
         <section class="project-content-section project-highlight-section">
 
             <div class="project-two-column">
 
                 <div>
 
-                    <p class="section-label">06 · Bluetooth Low Energy Control</p>
+                    <p class="section-label">06 · Bluetooth Low Energy</p>
 
-                    <h2>Adding a Wireless Manual-Control Mode</h2>
-
-                    <div class="image-placeholder">
-                        BLE Remote / Robot Communication Diagram
-                    </div>
+                    <h2>Adding a Separate Wireless Control Mode</h2>
 
                 </div>
 
@@ -334,20 +416,21 @@
 
                     <p>
                         In addition to autonomous operation, the robot incorporated
-                        Bluetooth Low Energy communication to provide a separate
-                        wireless control mode.
+                        Bluetooth Low Energy communication for wireless manual control.
                     </p>
 
                     <p>
-                        Commands were transmitted to the robot and converted into
-                        differential motor behaviour, allowing forward motion,
-                        steering, and stopping without a wired connection.
+                        Commands transmitted over BLE were interpreted by the embedded
+                        program and converted into differential motor behavior,
+                        allowing forward motion, steering, and stopping without a
+                        physical connection to the robot.
                     </p>
 
                     <p>
-                        Implementing both autonomous and manual modes required the
-                        embedded program to manage distinct operating states while
-                        keeping motor response and communication reliable.
+                        Supporting both autonomous and wireless modes required the
+                        program to manage separate operating states and switch between
+                        different sources of control while maintaining predictable
+                        motor behavior.
                     </p>
 
                 </div>
@@ -357,23 +440,26 @@
         </section>
 
 
-        <!-- Extra System Functionality -->
+        <!-- =====================================================
+             07 SENSOR & COMMUNICATION DEVELOPMENT
+             ===================================================== -->
+
         <section class="project-content-section">
 
-            <p class="section-label">07 · Sensor & Communication Development</p>
+            <p class="section-label">07 · Instrumentation & Communication</p>
 
-            <h2>Expanding the Robot Beyond Basic Motion</h2>
+            <h2>Working With Sensors Beyond Basic Motion</h2>
 
 
             <div class="project-feature-grid">
 
                 <article>
 
-                    <h3>Motion Sensing</h3>
+                    <h3>Line Sensing</h3>
 
                     <p>
-                        Worked with onboard inertial sensing to interpret motion and
-                        orientation data as part of the robot's broader sensing system.
+                        Used external sensing to detect the black path and provide
+                        the primary feedback signal for autonomous navigation.
                     </p>
 
                 </article>
@@ -381,12 +467,12 @@
 
                 <article>
 
-                    <h3>Wireless Data Transfer</h3>
+                    <h3>Inertial Sensing</h3>
 
                     <p>
-                        Used BLE characteristics to communicate control and sensor
-                        information between devices rather than relying solely on
-                        one-way remote commands.
+                        Worked with onboard inertial measurements to interpret motion
+                        and orientation information as part of the broader
+                        instrumentation system.
                     </p>
 
                 </article>
@@ -394,11 +480,12 @@
 
                 <article>
 
-                    <h3>Sensor Integration</h3>
+                    <h3>BLE Communication</h3>
 
                     <p>
-                        Combined multiple sensing functions within the same embedded
-                        platform while managing timing, communication, and control tasks.
+                        Used Bluetooth Low Energy communication to exchange control
+                        and sensor information between devices rather than relying
+                        only on one-way remote commands.
                     </p>
 
                 </article>
@@ -408,18 +495,17 @@
         </section>
 
 
-        <!-- Testing -->
+        <!-- =====================================================
+             08 TESTING
+             ===================================================== -->
+
         <section class="project-content-section project-two-column">
 
             <div>
 
                 <p class="section-label">08 · Testing & Debugging</p>
 
-                <h2>Making the Complete System Work Reliably</h2>
-
-                <div class="image-placeholder">
-                    Robot Testing / Development Photo
-                </div>
+                <h2>Finding Problems Across Multiple Engineering Domains</h2>
 
             </div>
 
@@ -427,21 +513,30 @@
             <div class="project-body-text">
 
                 <p>
-                    The most important challenge was system integration. A mechanical,
-                    electrical, or software issue could produce similar symptoms,
-                    making structured troubleshooting necessary.
+                    The most difficult problems were often integration problems.
+                    Similar symptoms could originate from sensor readings, wiring,
+                    motor response, mechanical alignment, communication, or control
+                    logic.
                 </p>
 
                 <p>
-                    Testing therefore progressed from individual components to complete
-                    functions: motor response, sensors, BLE communication, autonomous
-                    control, and finally full-robot operation.
+                    Testing therefore progressed systematically from individual
+                    components to complete functions:
                 </p>
 
+                <ul class="project-list">
+                    <li>Motor direction and response</li>
+                    <li>Sensor behavior</li>
+                    <li>Electrical connections</li>
+                    <li>BLE communication</li>
+                    <li>Autonomous steering</li>
+                    <li>Full-system operation</li>
+                </ul>
+
                 <p>
-                    The robot was iteratively debugged and tuned until it could
-                    repeatedly follow the intended black-line path and respond
-                    reliably to wireless control inputs.
+                    The robot was iteratively adjusted until it could repeatedly
+                    follow the intended path and respond reliably to wireless
+                    control inputs.
                 </p>
 
             </div>
@@ -449,20 +544,23 @@
         </section>
 
 
-        <!-- Outcomes -->
-        <section class="project-content-section">
+        <!-- =====================================================
+             09 OUTCOMES
+             ===================================================== -->
+
+        <section class="project-content-section project-highlight-section">
 
             <p class="section-label">09 · Project Outcomes</p>
 
-            <h2>From Fabrication to Autonomous Operation</h2>
+            <h2>From Fabrication to Integrated Operation</h2>
 
 
             <div class="analysis-metric-grid">
 
                 <article>
-                    <span>Drive System</span>
-                    <strong>2 Motors</strong>
-                    <p>differential-drive control</p>
+                    <span>Team</span>
+                    <strong>2</strong>
+                    <p>student design team</p>
                 </article>
 
                 <article>
@@ -472,15 +570,15 @@
                 </article>
 
                 <article>
-                    <span>Mechanical Platform</span>
-                    <strong>3D Printed</strong>
-                    <p>custom chassis and wheels</p>
+                    <span>Drive System</span>
+                    <strong>2 Motors</strong>
+                    <p>differential-drive platform</p>
                 </article>
 
                 <article>
-                    <span>System Integration</span>
-                    <strong>Full Stack</strong>
-                    <p>mechanical · electrical · software</p>
+                    <span>Mechanical Platform</span>
+                    <strong>3D Printed</strong>
+                    <p>custom chassis and wheels</p>
                 </article>
 
             </div>
@@ -488,8 +586,11 @@
         </section>
 
 
-        <!-- Lessons -->
-        <section class="project-content-section project-highlight-section">
+        <!-- =====================================================
+             10 LESSONS
+             ===================================================== -->
+
+        <section class="project-content-section">
 
             <p class="section-label">10 · Engineering Lessons</p>
 
@@ -503,9 +604,9 @@
                     <h3>Integration Matters</h3>
 
                     <p>
-                        A strong mechanical, electrical, or software subsystem is not
-                        enough by itself; the overall product only works when all three
-                        interact predictably.
+                        Mechanical, electrical, and software subsystems cannot be
+                        optimized independently when their behavior directly affects
+                        one another.
                     </p>
 
                 </article>
@@ -516,8 +617,9 @@
                     <h3>Debug Systematically</h3>
 
                     <p>
-                        Breaking problems into individual sensors, motors, communication,
-                        and control functions made faults much easier to isolate.
+                        Breaking problems into individual sensors, motors, wiring,
+                        communication, and control functions made faults much easier
+                        to isolate.
                     </p>
 
                 </article>
@@ -525,12 +627,12 @@
 
                 <article>
 
-                    <h3>Build, Test, Adjust</h3>
+                    <h3>Physical Testing Is Essential</h3>
 
                     <p>
-                        Physical testing quickly exposed behaviours that were difficult
-                        to anticipate from code or CAD alone, particularly in steering
-                        response and sensor-driven control.
+                        Robot behavior depended on real motor response, sensor
+                        placement and chassis motion in ways that could not be fully
+                        predicted from code alone.
                     </p>
 
                 </article>
@@ -540,7 +642,10 @@
         </section>
 
 
-        <!-- Skills -->
+        <!-- =====================================================
+             SKILLS
+             ===================================================== -->
+
         <section class="project-content-section">
 
             <p class="section-label">11 · Skills & Tools</p>
@@ -554,23 +659,34 @@
                 <span>C/C++</span>
                 <span>Bluetooth Low Energy</span>
                 <span>Embedded Systems</span>
-                <span>Line Sensors</span>
-                <span>Feedback Control</span>
-                <span>Differential Drive</span>
+
+                <span>Instrumentation</span>
                 <span>Sensor Integration</span>
+                <span>Line Sensors</span>
+                <span>Inertial Sensing</span>
+
+                <span>Differential Drive</span>
+                <span>Feedback Control</span>
+                <span>State-Based Control</span>
+
                 <span>3D Printing</span>
                 <span>Soldering</span>
                 <span>Electronics Integration</span>
+
                 <span>Prototyping</span>
                 <span>Testing</span>
                 <span>Debugging</span>
+                <span>System Integration</span>
 
             </div>
 
         </section>
 
 
-        <!-- Next -->
+        <!-- =====================================================
+             NEXT
+             ===================================================== -->
+
         <section class="project-next">
 
             <p>Next Experience</p>
