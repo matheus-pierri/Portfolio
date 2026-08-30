@@ -1260,7 +1260,8 @@ footer {
 }
 
 .project-figure-wide {
-    max-width: 1200px;
+    max-width: 780px;
+    width: 65%;
 
     margin-left: auto;
     margin-right: auto;
