@@ -2066,3 +2066,96 @@ footer {
     }
 
 }
+
+
+/* =========================================================
+   EXPERIENCE SECTION COLOUR ACCENTS
+   ========================================================= */
+
+
+/* ---------- SEASPAN ---------- */
+
+.experience-seaspan {
+    border-color: #d9b8b8;
+    border-top: 4px solid #a84b4b;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(168, 75, 75, 0.055),
+            rgba(255, 255, 255, 0) 45%
+        ),
+        #ffffff;
+}
+
+.experience-seaspan .experience-metrics > div {
+    background: #f7eeee;
+    border-color: #ead4d4;
+}
+
+.experience-seaspan .eyebrow {
+    color: #914141;
+}
+
+
+/* ---------- UBC SOLAR ---------- */
+
+.experience-solar {
+    border-color: #c8d1dc;
+    border-top: 4px solid #173a63;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(23, 58, 99, 0.06),
+            rgba(230, 183, 45, 0.035) 58%,
+            rgba(255, 255, 255, 0) 80%
+        ),
+        #ffffff;
+}
+
+.experience-solar .experience-metrics > div {
+    background: #f1f4f8;
+    border-color: #d5dde7;
+}
+
+.experience-solar .experience-metrics > div:nth-child(2n) {
+    background: #faf7eb;
+    border-color: #ebe1bc;
+}
+
+.experience-solar .eyebrow {
+    color: #173a63;
+}
+
+
+/* ---------- MYGRADEBOOSTER ---------- */
+
+.experience-mgb {
+    border-color: #c9ddd2;
+    border-left: 4px solid #4c8a69;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(76, 138, 105, 0.07),
+            rgba(255, 255, 255, 0) 32%
+        ),
+        #ffffff;
+}
+
+
+/* ---------- KUMON ---------- */
+
+.experience-kumon {
+    border-color: #c8deeb;
+    border-left: 4px solid #61a7cf;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(97, 167, 207, 0.075),
+            rgba(255, 255, 255, 0) 32%
+        ),
+        #ffffff;
+}
