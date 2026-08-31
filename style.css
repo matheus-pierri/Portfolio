@@ -2067,95 +2067,166 @@ footer {
 
 }
 
-
 /* =========================================================
-   EXPERIENCE SECTION COLOUR ACCENTS
+   EXPERIENCE CARD ACCENT LINES
    ========================================================= */
 
-
-/* ---------- SEASPAN ---------- */
-
-.experience-seaspan {
-    border-color: #d9b8b8;
-    border-top: 4px solid #a84b4b;
-
-    background:
-        linear-gradient(
-            135deg,
-            rgba(168, 75, 75, 0.055),
-            rgba(255, 255, 255, 0) 45%
-        ),
-        #ffffff;
-}
-
-.experience-seaspan .experience-metrics > div {
-    background: #f7eeee;
-    border-color: #ead4d4;
-}
-
-.experience-seaspan .eyebrow {
-    color: #914141;
+.experience-featured,
+.experience-compact {
+    position: relative;
+    overflow: hidden;
 }
 
 
-/* ---------- UBC SOLAR ---------- */
+/* Keep content above decoration */
 
-.experience-solar {
-    border-color: #c8d1dc;
-    border-top: 4px solid #173a63;
-
-    background:
-        linear-gradient(
-            135deg,
-            rgba(23, 58, 99, 0.06),
-            rgba(230, 183, 45, 0.035) 58%,
-            rgba(255, 255, 255, 0) 80%
-        ),
-        #ffffff;
-}
-
-.experience-solar .experience-metrics > div {
-    background: #f1f4f8;
-    border-color: #d5dde7;
-}
-
-.experience-solar .experience-metrics > div:nth-child(2n) {
-    background: #faf7eb;
-    border-color: #ebe1bc;
-}
-
-.experience-solar .eyebrow {
-    color: #173a63;
+.experience-featured > *,
+.experience-compact > * {
+    position: relative;
+    z-index: 2;
 }
 
 
-/* ---------- MYGRADEBOOSTER ---------- */
+/* Keep metric cards clean/white */
 
-.experience-mgb {
-    border-color: #c9ddd2;
-    border-left: 4px solid #4c8a69;
-
-    background:
-        linear-gradient(
-            90deg,
-            rgba(76, 138, 105, 0.07),
-            rgba(255, 255, 255, 0) 32%
-        ),
-        #ffffff;
+.experience-metrics > div {
+    background: #ffffff;
 }
 
 
-/* ---------- KUMON ---------- */
+/* =========================================================
+   SEASPAN
+   ========================================================= */
 
-.experience-kumon {
-    border-color: #c8deeb;
-    border-left: 4px solid #61a7cf;
+.experience-seaspan::after {
+    content: "";
 
-    background:
-        linear-gradient(
-            90deg,
-            rgba(97, 167, 207, 0.075),
-            rgba(255, 255, 255, 0) 32%
-        ),
-        #ffffff;
+    position: absolute;
+
+    width: 420px;
+    height: 5px;
+
+    right: -65px;
+    bottom: 55px;
+
+    background: #a84b4b;
+
+    transform: rotate(-30deg);
+    transform-origin: center;
+
+    border-radius: 999px;
+
+    opacity: 0.85;
+}
+
+
+/* =========================================================
+   UBC SOLAR
+   ========================================================= */
+
+.experience-solar::before,
+.experience-solar::after {
+    content: "";
+
+    position: absolute;
+
+    height: 5px;
+
+    transform: rotate(-30deg);
+    transform-origin: center;
+
+    border-radius: 999px;
+
+    opacity: 0.85;
+}
+
+.experience-solar::before {
+    width: 390px;
+
+    right: -55px;
+    bottom: 55px;
+
+    background: #173a63;
+}
+
+.experience-solar::after {
+    width: 175px;
+
+    right: -35px;
+    bottom: 28px;
+
+    background: #d4ad32;
+}
+
+
+/* =========================================================
+   MYGRADEBOOSTER
+   ========================================================= */
+
+.experience-mgb::after {
+    content: "";
+
+    position: absolute;
+
+    width: 230px;
+    height: 5px;
+
+    right: -45px;
+    bottom: 32px;
+
+    background: #4c8a69;
+
+    transform: rotate(-30deg);
+
+    border-radius: 999px;
+
+    opacity: 0.8;
+}
+
+
+/* =========================================================
+   KUMON
+   ========================================================= */
+
+.experience-kumon::after {
+    content: "";
+
+    position: absolute;
+
+    width: 230px;
+    height: 5px;
+
+    right: -45px;
+    bottom: 32px;
+
+    background: #67a9d0;
+
+    transform: rotate(-30deg);
+
+    border-radius: 999px;
+
+    opacity: 0.8;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+    .experience-seaspan::after,
+    .experience-solar::before {
+        width: 260px;
+    }
+
+    .experience-solar::after {
+        width: 120px;
+    }
+
+    .experience-mgb::after,
+    .experience-kumon::after {
+        width: 170px;
+    }
+
 }
