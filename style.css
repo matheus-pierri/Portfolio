@@ -2068,17 +2068,18 @@ footer {
 }
 
 /* =========================================================
-   EXPERIENCE CARD ACCENT LINES
+   EXPERIENCE CARD CUSTOM COLOURING
    ========================================================= */
 
 .experience-featured,
 .experience-compact {
     position: relative;
     overflow: hidden;
+    background: #ffffff;
 }
 
 
-/* Keep content above decoration */
+/* Keep all real content above decorative shapes */
 
 .experience-featured > *,
 .experience-compact > * {
@@ -2087,7 +2088,7 @@ footer {
 }
 
 
-/* Keep metric cards clean/white */
+/* Keep metric cards white */
 
 .experience-metrics > div {
     background: #ffffff;
@@ -2103,20 +2104,23 @@ footer {
 
     position: absolute;
 
-    width: 420px;
-    height: 5px;
+    right: 0;
+    bottom: 0;
 
-    right: -65px;
-    bottom: 55px;
+    width: 420px;
+    height: 155px;
 
     background: #a84b4b;
 
-    transform: rotate(-30deg);
-    transform-origin: center;
+    clip-path: polygon(
+        100% 0,
+        100% 100%,
+        0 100%
+    );
 
-    border-radius: 999px;
+    opacity: 0.88;
 
-    opacity: 0.85;
+    z-index: 1;
 }
 
 
@@ -2124,38 +2128,52 @@ footer {
    UBC SOLAR
    ========================================================= */
 
-.experience-solar::before,
+.experience-solar::before {
+    content: "";
+
+    position: absolute;
+
+    right: 0;
+    bottom: 0;
+
+    width: 420px;
+    height: 155px;
+
+    background: #173a63;
+
+    clip-path: polygon(
+        100% 0,
+        100% 100%,
+        0 100%
+    );
+
+    opacity: 0.92;
+
+    z-index: 1;
+}
+
 .experience-solar::after {
     content: "";
 
     position: absolute;
 
-    height: 5px;
+    right: 0;
+    bottom: 0;
 
-    transform: rotate(-30deg);
-    transform-origin: center;
-
-    border-radius: 999px;
-
-    opacity: 0.85;
-}
-
-.experience-solar::before {
-    width: 390px;
-
-    right: -55px;
-    bottom: 55px;
-
-    background: #173a63;
-}
-
-.experience-solar::after {
-    width: 175px;
-
-    right: -35px;
-    bottom: 28px;
+    width: 190px;
+    height: 70px;
 
     background: #d4ad32;
+
+    clip-path: polygon(
+        100% 0,
+        100% 100%,
+        0 100%
+    );
+
+    opacity: 0.95;
+
+    z-index: 1;
 }
 
 
@@ -2168,19 +2186,23 @@ footer {
 
     position: absolute;
 
-    width: 230px;
-    height: 5px;
+    right: 0;
+    bottom: 0;
 
-    right: -45px;
-    bottom: 32px;
+    width: 260px;
+    height: 95px;
 
     background: #4c8a69;
 
-    transform: rotate(-30deg);
+    clip-path: polygon(
+        100% 0,
+        100% 100%,
+        0 100%
+    );
 
-    border-radius: 999px;
+    opacity: 0.88;
 
-    opacity: 0.8;
+    z-index: 1;
 }
 
 
@@ -2193,19 +2215,23 @@ footer {
 
     position: absolute;
 
-    width: 230px;
-    height: 5px;
+    right: 0;
+    bottom: 0;
 
-    right: -45px;
-    bottom: 32px;
+    width: 260px;
+    height: 95px;
 
     background: #67a9d0;
 
-    transform: rotate(-30deg);
+    clip-path: polygon(
+        100% 0,
+        100% 100%,
+        0 100%
+    );
 
-    border-radius: 999px;
+    opacity: 0.88;
 
-    opacity: 0.8;
+    z-index: 1;
 }
 
 
@@ -2218,15 +2244,23 @@ footer {
     .experience-seaspan::after,
     .experience-solar::before {
         width: 260px;
+        height: 105px;
     }
 
     .experience-solar::after {
-        width: 120px;
+        width: 125px;
+        height: 48px;
     }
 
     .experience-mgb::after,
     .experience-kumon::after {
-        width: 170px;
+        width: 180px;
+        height: 70px;
     }
 
+}
+
+#contact a {
+    text-decoration: underline;
+    text-underline-offset: 3px;
 }
