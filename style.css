@@ -2033,18 +2033,17 @@ footer {
 
 /* =========================================================
    HOMEPAGE PROJECT IMAGES
+   Match old gray placeholder sizing
    ========================================================= */
 
 .project-card-image {
     height: 220px;
-
-    margin: -30px -30px 24px;
+    margin-bottom: 20px;
 
     overflow: hidden;
 
     background: #e5e7eb;
-
-    border-radius: 14px 14px 0 0;
+    border-radius: 10px;
 }
 
 .project-card-image img {
@@ -2054,17 +2053,11 @@ footer {
     height: 100%;
 
     object-fit: cover;
-
-    transition: transform 0.3s ease;
+    object-position: center;
 }
 
 
-/* Slight image movement with the existing card hover */
-
-#projects article:hover .project-card-image img {
-    transform: scale(1.025);
-}
-
+/* Mobile */
 
 @media (max-width: 600px) {
 
